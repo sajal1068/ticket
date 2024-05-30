@@ -32,6 +32,47 @@
                         <a href="index2.html" class="btn btn-sm btn-primary">Back</a>
                         </div>
                     <div class="card-body">
+
+                        <div class="p-2">
+                            <form class="modalFormDesign">                               
+                                <div class="mb-3">
+                                    <label for="Age" class="form-label fw-bold">No. of Ticket</label>
+                                    <select id="no_of_ticket" class="form-control">
+                                        <option value="0">Select</option>
+                                        <option value="10">10</option>
+                                        <option value="20">20</option>
+                                        <option value="30">30</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="400">400</option>
+                                        <option value="500">500</option>
+                                        <option value="1000">1000</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="ticket_serial_no" class="form-label fw-bold">Ticket Serial No.</label>
+                                    <input type="text" class="form-control" id="ticket_serial_no" maxlength="5" placeholder="" />
+                                    <h6 id="checkTicketSerialNo" style="color: red;"> </h6>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="ticket_draw_no" class="form-label fw-bold">Ticket Draw No.</label>
+                                    <input type="text" class="form-control" id="ticket_draw_no" maxlength="3" placeholder="" />
+                                    <h6 id="checkTicketDrawNo" style="color: red;"> </h6>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="ticket_code" class="form-label fw-bold">Ticket Code</label>
+                                    <input type="text" class="form-control" id="ticket_code" maxlength="5" placeholder="" />
+                                    <h6 id="checkTicketCode" style="color: red;"> </h6>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="ticket_sam_type" class="form-label fw-bold">Ticket Sam Type</label>
+                                    <select id="ticket_sam_type" class="form-control">
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
                         <ul class="onePM">
                             <li><span>1 PM -> 3 SAM</span><span>29-05-2024</span></li>                            
                             <li><a href="">784956321</a></li>
