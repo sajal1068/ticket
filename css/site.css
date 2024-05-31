@@ -941,6 +941,7 @@ select {
 
     --redBG:#f3dbd7;
     --red:#c12829;
+    --red1:193,40,41;
     --purple:#5d3bbc;    
     --purpleBG:#dcd2f3;
 
@@ -1170,8 +1171,193 @@ ul.bottomMenu li:nth-child(4) a.active svg{
     top:10px;
     right: 15px;
     color: inherit;
-
  }
+
+
+ .acc-container {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+}
+
+.acc  {
+ margin-bottom: 10px;
+}
+
+.acc-head {
+
+/* background-color: rgb(155, 154, 87);
+padding: 15px 10px;
+font-size: 22px;
+position: relative;
+cursor: pointer; */
+
+    width: 100%;
+    margin-bottom: 4px;
+    padding: 15px 15px;
+    
+    border-radius: 4px;
+    position: relative;
+    display: block;
+    font-weight: 600;
+    font-size: 0.99rem;
+    border-left: solid 3px;
+    background-color:inherit;
+    color: inherit;
+    border-color: inherit;
+
+}
+
+.red .acc-head{
+    background-color: var(--redBG);
+    color: var(--red);   
+    border-left: solid 3px var(--red);
+}
+.purpale .acc-head{
+    background-color: var(--purpaleBG);
+    color: var(--purpale);   
+    border-left: solid 3px var(--purpale);
+}
+.green .acc-head{
+    background-color: var(--greenBG);
+    color: var(--green);    
+    border-left: solid 3px var(--green);
+}
+
+.acc-head::before,
+.acc-head::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    background-color: inherit;
+    transition: all .3s;
+}
+
+.red .acc-head::before,
+.red .acc-head::after {
+    background-color:var(--red);   
+}
+.green .acc-head::before,
+.green .acc-head::after {
+    background-color:var(--green);      
+}
+.purpale .acc-head::before,
+.purpale .acc-head::after {
+    background-color:var(--purpale); 
+}
+
+.acc-head::before {
+    right: 30px;
+    width: 3px;
+    height: 20px;
+    margin-top: -10px;
+}
+
+.acc-head::after {
+    right: 21px;
+    width: 20px;
+    height: 3px;
+    margin-top: -2px;
+}
+
+.acc-head p {   
+    font-weight: bold;
+    margin: 0;
+}
+
+.acc-content {
+    padding: 15px 10px;
+    display: none;
+    background-color:inherit;
+    border-radius: 4px;
+}
+
+.red .acc-content{
+    background-color:var(--redBG);      
+}
+.green .acc-content{
+    background-color:var(--purpaleBG);      
+}
+.purpale .acc-content{
+    background-color:var(--purpaleBG);      
+}
+      
+.acc-head.active::before {
+  transform: rotate(90deg);
+}
+
+
+.accordion {
+    /* max-width: 300px; */
+    width: 100%;
+    /* background: linear-gradient(to bottom right, #FFF, #f7f7f7);
+    background: #0097a7; */
+    margin: 0 auto;
+    border-radius: 3px;
+    /* box-shadow: 0 10px 15px -20px rgba(0, 0, 0, 0.3), 0 30px 45px -30px rgba(0, 0, 0, 0.3), 0 80px 55px -30px rgba(0, 0, 0, 0.1); */
+}
+
+.heading {
+    color: #FFF;
+    font-size:14px;
+    border-bottom: 1px solid #e7e7e7;
+	letter-spacing: 0.8px;
+    padding: 10px;
+    cursor: pointer;  
+    border-radius: 4px;
+    background-color: inherit;
+}
+.red .accordion .heading{
+    background-color: var(--red);
+}
+.green .accordion .heading{
+    background-color: var(--green);
+}
+.purpale .accordion .heading{
+    background-color: var(--purpale);
+}
+.heading:nth-last-child(2){
+    border-bottom:0; 
+}
+.heading:hover {
+    /* background: #00838f; */
+    border-radius: 0;
+}
+.heading:first-child:hover {
+    border-radius: 3px 3px 0 0;
+}
+.heading:nth-last-child(2):hover{
+    border-radius:0 0 3px 3px;
+}
+.heading::before {
+    content: '';
+    vertical-align: middle;
+    display: inline-block;
+    border-top: 7px solid #f5f5f5;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    float: right;
+    transform: rotate(0);
+    transition: all 0.5s;
+    margin-top: 5px;
+}
+.active.heading::before {
+    transform: rotate(-180deg);
+}
+.not-active.heading::before {
+    transform: rotate(0deg);
+}
+.contents {
+	display: none;
+	background: #FFFAFA;
+	padding: 15px;
+    color: #7f8fa4;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* */
 
  ul.userProfiles{
     display: flex;
@@ -1198,7 +1384,7 @@ ul.bottomMenu li:nth-child(4) a.active svg{
  ul.onePM li{
     width: 100%;
     margin-bottom: 4px;
-    padding: 15px 15px;
+    padding: 10px 15px;
     background-color: var(--redBG);  
     color:var(--red);
     border-radius: 4px;
@@ -1223,7 +1409,7 @@ ul.bottomMenu li:nth-child(4) a.active svg{
  ul.sixPM li{
     width: 100%;
     margin-bottom: 4px;
-    padding: 15px 15px;
+    padding: 10px 15px;
     background-color: var(--purpaleBG);  
     color:var(--purpale);
     border-radius: 4px;
@@ -1248,7 +1434,7 @@ ul.bottomMenu li:nth-child(4) a.active svg{
  ul.eightPM li{
     width: 100%;
     margin-bottom: 4px;
-    padding: 15px 15px;
+    padding: 10px 15px;
     background-color: var(--greenBG);  
     color:var(--green);
     border-radius: 4px;
@@ -1415,6 +1601,10 @@ ul.bottomMenu li:nth-child(4) a.active svg{
     width: 90px;
     fill: #5336ca;
 }
+
+
+
+ 
           
 @media (max-width: 576px) { 
     .iconDiv{

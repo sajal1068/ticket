@@ -33,13 +33,237 @@
                         <a href="create.html" class="btn btn-sm btn-primary">Back</a>
                         </div>
                     <div class="card-body">
-                        <ul class="createTicket">
+                        <!-- <ul class="createTicket">
                             <li>Ganrate Date</li>
                             <li><a href="index2.html">1 PM</a></li>
                             <li><a href="sixpm.html">6 PM</a></li>
                             <li><a href="eightPM.html">8 PM</a></li>
                             <li>Edit PRi2 List</li>
-                        </ul>
+                        </ul> -->
+                        <!-- Accrodian -->
+                        <div class="acc-container">        
+                            <div class="acc red">
+                                <div class="acc-head">
+                                    <p>1 PM</p>
+                                </div>
+                                <div class="acc-content">
+                                    <div class="accordion">
+                                        <div class="heading">3 SAM</div>
+                                        <div class="contents">
+                                            <form class="modalFormDesign">                               
+                                                <div class="mb-3">
+                                                    <label for="Age" class="form-label fw-bold">No. of Ticket</label>
+                                                    <select id="no_of_ticket" class="form-control">
+                                                        <option value="0">Select</option>
+                                                        <option value="10">10</option>
+                                                        <option value="20">20</option>
+                                                        <option value="30">30</option>
+                                                        <option value="50">50</option>
+                                                        <option value="100">100</option>
+                                                        <option value="200">200</option>
+                                                        <option value="300">300</option>
+                                                        <option value="400">400</option>
+                                                        <option value="500">500</option>
+                                                        <option value="1000">1000</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="ticket_serial_no" class="form-label fw-bold">Ticket Serial No.</label>
+                                                    <input type="text" class="form-control" id="ticket_serial_no" maxlength="5" placeholder="" />
+                                                    <h6 id="checkTicketSerialNo" style="color: red;"> </h6>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="ticket_draw_no" class="form-label fw-bold">Ticket Draw No.</label>
+                                                    <input type="text" class="form-control" id="ticket_draw_no" maxlength="3" placeholder="" />
+                                                    <h6 id="checkTicketDrawNo" style="color: red;"> </h6>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="ticket_code" class="form-label fw-bold">Ticket Code</label>
+                                                    <input type="text" class="form-control" id="ticket_code" maxlength="5" placeholder="" />
+                                                    <h6 id="checkTicketCode" style="color: red;"> </h6>
+                                                </div>
+                                                <!-- <div class="mb-3">
+                                                    <label for="ticket_sam_type" class="form-label fw-bold">Ticket Sam Type</label>
+                                                    <select id="ticket_sam_type" class="form-control">
+                                                    </select>
+                                                </div> -->
+                                                <div class="w-100 text-center">
+                                                    <button class="btn btn-sm btn-danger">Submit</button>
+                                                </div>
+                                            </form>
+
+                                            <div class="clearfix"></div>
+                                            <ul class="onePM mt-2">
+                                                <li><span>1 PM -&gt; 3 SAM</span><span>29-05-2024</span></li>                            
+                                                <li><a href="">784956321</a></li>
+                                                <li><a href="">784956321</a></li>
+                                                <li><a href="">784956321</a></li>
+                                                <li><a href="">784956321</a></li>
+                                                <li><a href="">784956321</a></li>
+                                                <li><a href="">784956321</a></li>
+                                               
+                                            </ul>
+
+                                        </div>
+                                    
+                                        <div class="heading">5 SAM</div>
+                                        <div class="contents">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                    
+                                        <div class="heading">6 SAM</div>
+                                        <div class="contents">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="acc purpale">
+                                <div class=" acc-head">
+                                    <p>6 PM</p>
+                                </div>
+                                <div class="acc-content">
+                                    <div class="accordion">
+                                        <div class="heading">3 SAM</div>
+                                        <div class="contents">
+                                            <form class="modalFormDesign">                               
+                                                <div class="mb-3">
+                                                    <label for="Age" class="form-label fw-bold">No. of Ticket</label>
+                                                    <select id="no_of_ticket" class="form-control">
+                                                        <option value="0">Select</option>
+                                                        <option value="10">10</option>
+                                                        <option value="20">20</option>
+                                                        <option value="30">30</option>
+                                                        <option value="50">50</option>
+                                                        <option value="100">100</option>
+                                                        <option value="200">200</option>
+                                                        <option value="300">300</option>
+                                                        <option value="400">400</option>
+                                                        <option value="500">500</option>
+                                                        <option value="1000">1000</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="ticket_serial_no" class="form-label fw-bold">Ticket Serial No.</label>
+                                                    <input type="text" class="form-control" id="ticket_serial_no" maxlength="5" placeholder="" />
+                                                    <h6 id="checkTicketSerialNo" style="color: red;"> </h6>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="ticket_draw_no" class="form-label fw-bold">Ticket Draw No.</label>
+                                                    <input type="text" class="form-control" id="ticket_draw_no" maxlength="3" placeholder="" />
+                                                    <h6 id="checkTicketDrawNo" style="color: red;"> </h6>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="ticket_code" class="form-label fw-bold">Ticket Code</label>
+                                                    <input type="text" class="form-control" id="ticket_code" maxlength="5" placeholder="" />
+                                                    <h6 id="checkTicketCode" style="color: red;"> </h6>
+                                                </div>
+                                                <!-- <div class="mb-3">
+                                                    <label for="ticket_sam_type" class="form-label fw-bold">Ticket Sam Type</label>
+                                                    <select id="ticket_sam_type" class="form-control">
+                                                    </select>
+                                                </div> -->
+                                                <div class="w-100 text-center">
+                                                    <button class="btn btn-sm btn-primary">Submit</button>
+                                                </div>
+                                            </form>
+
+                                            <div class="clearfix"></div>
+                                            <ul class="sixPM mt-2">
+                                                <li><span>1 PM -&gt; 3 SAM</span><span>29-05-2024</span></li>                            
+                                                <li><a href="">784956321</a></li>
+                                                <li><a href="">784956321</a></li>
+                                                <li><a href="">784956321</a></li>
+                                                <li><a href="">784956321</a></li>
+                                                <li><a href="">784956321</a></li>
+                                                <li><a href="">784956321</a></li>
+                                               
+                                            </ul>
+
+                                        </div>
+                                    
+                                        <div class="heading">5 SAM</div>
+                                        <div class="contents">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                    
+                                        <div class="heading">6 SAM</div>
+                                        <div class="contents">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="acc green">
+                            <div class="acc-head ">
+                            <p>8 PM</p>
+                            </div>
+                            <div class="acc-content">
+                                <div class="accordion">
+                                    <div class="heading">3 SAM</div>
+                                    <div class="contents">
+                                        <form class="modalFormDesign">                               
+                                            <div class="mb-3">
+                                                <label for="Age" class="form-label fw-bold">No. of Ticket</label>
+                                                <select id="no_of_ticket" class="form-control">
+                                                    <option value="0">Select</option>
+                                                    <option value="10">10</option>
+                                                    <option value="20">20</option>
+                                                    <option value="30">30</option>
+                                                    <option value="50">50</option>
+                                                    <option value="100">100</option>
+                                                    <option value="200">200</option>
+                                                    <option value="300">300</option>
+                                                    <option value="400">400</option>
+                                                    <option value="500">500</option>
+                                                    <option value="1000">1000</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="ticket_serial_no" class="form-label fw-bold">Ticket Serial No.</label>
+                                                <input type="text" class="form-control" id="ticket_serial_no" maxlength="5" placeholder="" />
+                                                <h6 id="checkTicketSerialNo" style="color: red;"> </h6>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="ticket_draw_no" class="form-label fw-bold">Ticket Draw No.</label>
+                                                <input type="text" class="form-control" id="ticket_draw_no" maxlength="3" placeholder="" />
+                                                <h6 id="checkTicketDrawNo" style="color: red;"> </h6>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="ticket_code" class="form-label fw-bold">Ticket Code</label>
+                                                <input type="text" class="form-control" id="ticket_code" maxlength="5" placeholder="" />
+                                                <h6 id="checkTicketCode" style="color: red;"> </h6>
+                                            </div>
+                                            <!-- <div class="mb-3">
+                                                <label for="ticket_sam_type" class="form-label fw-bold">Ticket Sam Type</label>
+                                                <select id="ticket_sam_type" class="form-control">
+                                                </select>
+                                            </div> -->
+                                            <div class="w-100 text-center">
+                                                <button class="btn btn-sm btn-success">Submit</button>
+                                            </div>
+                                        </form>
+
+                                        <div class="clearfix"></div>
+                                        <ul class="eightPM mt-2">
+                                            <li><span>1 PM -&gt; 3 SAM</span><span>29-05-2024</span></li>                            
+                                            <li><a href="">784956321</a></li>
+                                            <li><a href="">784956321</a></li>
+                                            <li><a href="">784956321</a></li>
+                                            <li><a href="">784956321</a></li>
+                                            <li><a href="">784956321</a></li>
+                                            <li><a href="">784956321</a></li>
+                                           
+                                        </ul>
+
+                                    </div>
+                                
+                                    <div class="heading">5 SAM</div>
+                                    <div class="contents">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                
+                                    <div class="heading">6 SAM</div>
+                                    <div class="contents">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                </div>
+                            </div>
+                            </div>
+                            
+                          
+                            </div>
+                        <!-- Accrodian -->
                     </div>
                 </div>
             </div>
@@ -89,5 +313,37 @@
     <script src="js/jquery.min.js" ></script>
     <script src="js/bootstrap.bundle.min.js" ></script>
     <script src="https://unpkg.com/gijgo@1.9.14/js/gijgo.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+       // $('.acc-container .acc:nth-child(1) .acc-head').addClass('active');
+       // $('.acc-container .acc:nth-child(1) .acc-content').slideDown();
+        $('.acc-head').on('click', function() {
+            if($(this).hasClass('active')) {
+            $(this).siblings('.acc-content').slideUp();
+            $(this).removeClass('active');
+            }
+            else {
+            $('.acc-content').slideUp();
+            $('.acc-head').removeClass('active');
+            $(this).siblings('.acc-content').slideToggle();
+            $(this).toggleClass('active');
+            }
+        });  
+        
+        
+        });
+
+        $(document).ready(function(){
+            $(".accordion").on("click", ".heading", function() {
+
+            $(this).toggleClass("active").next().slideToggle();
+
+            $(".contents").not($(this).next()).slideUp(300);
+                            
+            $(this).siblings().removeClass("active");
+            });
+        });
+    </script>
   </body>
 </html>
