@@ -1285,8 +1285,6 @@ cursor: pointer; */
 .acc-head.active::before {
   transform: rotate(90deg);
 }
-
-
 .accordion {
     /* max-width: 300px; */
     width: 100%;
@@ -1306,7 +1304,8 @@ cursor: pointer; */
     cursor: pointer;  
     border-radius: 4px;
     background-color: inherit;
-}
+} 
+
 .red .accordion .heading{
     background-color: var(--red);
 }
@@ -1356,8 +1355,71 @@ cursor: pointer; */
     line-height: 1.5;
 }
 
+ul.historylis li{
 
+    width: 100%;
+    margin-bottom: 4px;
+    
+    background-color: inherit;
+    color: var(--white);
+    border-radius: 4px;
+    position: relative;
+    display: block;   
+    
+   
+}
+ul.historylis li a{
+    color: inherit;
+    display: block;
+    padding: 10px 15px;
+    font-size: 0.99rem;
+    text-decoration: none;   
+    font-weight: 600;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.red ul.historylis li{
+    background-color: var(--red);
+}
+.green ul.historylis li{
+    background-color: var(--green);
+}
+.purpale ul.historylis li{
+    background-color: var(--purpale);
+}
+.max-700{
+    max-width: 700px;
+    margin: auto;
+}
 /* */
+
+/* Search Box */
+
+.searchBox{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: end;
+}
+.searchBox .inputSearch{
+    position: relative;
+    width: 200px;   
+    display: flex;
+    padding: 5px 0;
+    justify-content: end;
+}
+.searchBox .inputSearch input{
+
+}
+.searchBox .inputSearch .btn{
+    margin-right: -2px;
+}
+
+/* search Box */
 
  ul.userProfiles{
     display: flex;
