@@ -736,7 +736,7 @@ ul.SelectTiket {
     margin-bottom: 15px;
 }
 
-select.form-control {
+/* select.form-control {
     -webkit-appearance: menulist;
 }
 
@@ -746,7 +746,7 @@ select.form-select {
 
 select {
     -webkit-appearance: menulist;
-}
+} */
 
 
 .btn.btn-sm {
@@ -1276,7 +1276,7 @@ cursor: pointer; */
     background-color:var(--redBG);      
 }
 .green .acc-content{
-    background-color:var(--purpaleBG);      
+    background-color:var(--greenBG);      
 }
 .purpale .acc-content{
     background-color:var(--purpaleBG);      
