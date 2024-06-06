@@ -1403,14 +1403,39 @@ ul.historylis li a{
     padding: 0;
     box-sizing: border-box;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    align-items: center;
 }
+
+ul.dateSection{
+    width: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+ul.dateSection li:nth-child(1){
+    margin-right: 10px;
+}
+ul.dateSection li input{
+    height: 30px;
+}
+ul.dateSection li button{
+    height: 31px;
+    display: flex;
+    align-items: center;
+}
+ul.dateSection li label{
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
 .searchBox .inputSearch{
     position: relative;
     width: 200px;   
     display: flex;
-    padding: 5px 0;
-    justify-content: end;
+    height: 31px;
 }
 .searchBox .inputSearch input{
 
@@ -1418,6 +1443,16 @@ ul.historylis li a{
 .searchBox .inputSearch .btn{
     margin-right: -2px;
 }
+
+@media (max-width: 768px) { 
+    .searchBox{
+       flex-direction: column;
+       justify-content: center;
+       padding-bottom: 5px;
+    }
+
+
+ }
 
 /* search Box */
 

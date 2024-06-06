@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,800;1,200;1,300;1,600&display=swap"
         rel="stylesheet">
-    <link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    
     <style>
         .checkBox {
             display: inline-block;        
@@ -97,15 +97,22 @@
                     <div class="card-body">
                         <div class="max-700">
                             <div class="searchBox"> 
-                                <!-- <div class="d-flex">
-                                    Start Date: <input id="startDate" width="276" />
-                                    End Date: <input id="endDate" width="276" />
-                                </div>                               -->
+                                <ul class="dateSection">
+                                    <li>
+                                        <label class="form-label">Start Date:</label> 
+                                        <input id="startDate" class="form-control form-control-sm" width="130" />
+                                    </li>
+                                    <li>
+                                        <label class="form-label">End Date:</label> 
+                                        <input id="endDate" class="form-control form-control-sm" width="130" />
+                                    </li> 
+                                </ul>                              
                                 <div class="inputSearch">
                                     <input type="text" class="form-control form-control-sm" placeholder="Search">
                                     <button type="submit" class="btn btn-sm btn-primary">Search</button>
                                 </div>
                             </div>
+
                             <ul class="onePM">
                                 <li>                                    
                                     <div class="checkBox">
@@ -291,16 +298,22 @@
 
         var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
         $('#startDate').datepicker({
-            uiLibrary: 'bootstrap4',
+            uiLibrary: 'bootstrap5',
             iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<svg  width="16" height="16" fill="currentColor" class="bi bi-calendar-fill" viewBox="0 0 16 16"><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5"/></svg>'
+            },
             minDate: today,
             maxDate: function () {
                 return $('#endDate').val();
             }
         });
         $('#endDate').datepicker({
-            uiLibrary: 'bootstrap4',
+            uiLibrary: 'bootstrap5',
             iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<svg  width="16" height="16" fill="currentColor" class="bi bi-calendar-fill" viewBox="0 0 16 16"><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5"/></svg>'
+            },
             minDate: function () {
                 return $('#startDate').val();
             }
