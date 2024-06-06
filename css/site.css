@@ -1420,6 +1420,7 @@ ul.dateSection li:nth-child(1){
 }
 ul.dateSection li input{
     height: 30px;
+    max-width: 150px;
 }
 ul.dateSection li button{
     height: 31px;
