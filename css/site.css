@@ -1446,7 +1446,7 @@ ul.dateSection li label{
 
 @media (max-width: 768px) { 
     .searchBox{
-       flex-direction: column;
+       flex-direction: column!important;
        justify-content: center;
        padding-bottom: 5px;
     }
