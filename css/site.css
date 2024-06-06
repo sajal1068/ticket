@@ -1405,6 +1405,7 @@ ul.historylis li a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 5px;
 }
 
 ul.dateSection{
@@ -1447,8 +1448,7 @@ ul.dateSection li label{
 @media (max-width: 768px) { 
     .searchBox{
        flex-direction: column!important;
-       justify-content: center;
-       padding-bottom: 5px;
+       justify-content: center;      
     }
 
 
