@@ -1450,6 +1450,9 @@ ul.dateSection li label{
        flex-direction: column!important;
        justify-content: center;      
     }
+    ul.dateSection{
+        margin-bottom: 5px;
+    }
 
 
  }
