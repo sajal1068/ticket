@@ -10,13 +10,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,800;1,200;1,300;1,600&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <style>
+        .table {
+            /* border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            min-width: 400px;
+            border-radius: 5px 5px 0 0;
+            overflow: hidden; */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+        .table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+    </style>
 </head>
   <body class="bodybg">
 
     <div class="container mt-5">
-        <div class="row">
-            <div class="col-12 mb-2">
+        <div class="row justify-content-center">
+            <div class="col-md-8 mb-2">
                 <ul class="userProfiles">
                     <li><span>Date: </span>29-05-2024 </li> 
                     <li><span>User :</span></li> 
@@ -24,7 +37,7 @@
                 </ul>
             </div>
 
-            <div class="col-12 customCardDiv">
+            <div class="col-md-8 customCardDiv">
                 <div class="card">
                     <div class="card-header">
                         <h5 class="card-title text-pink">Histroy</h5>
@@ -127,6 +140,6 @@
     
     <script src="js/jquery.min.js" ></script>
     <script src="js/bootstrap.bundle.min.js" ></script>
-    <script src="https://unpkg.com/gijgo@1.9.14/js/gijgo.min.js"></script>
+    
   </body>
 </html>

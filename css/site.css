@@ -34,6 +34,7 @@ ul{
 .table thead tr th {
     font-weight: 600;
     font-size: .85rem;
+    padding: 0.75rem;
 }
 
 .table tr td {
